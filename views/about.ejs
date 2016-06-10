@@ -1,68 +1,16 @@
 <!DOCTYPE html>
-<!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Thu Jun 09 2016 16:25:39 GMT+0000 (UTC) -->
+
 <html data-wf-site="57599863366474567c8797d7" data-wf-page="57599863366474567c8797e3">
 <head>
-  <meta charset="utf-8">
-  <title>{{name}} | Projects</title>
-  <meta name="description" content="Learn more about this project, {{name}}, and see more from our company.">
-  <meta property="og:title" content="{{name}} | Projects">
-  <meta property="og:image">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="Webflow">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/workers-stellar-site.webflow.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
-      }
-    });
-  </script>
-  <script type="text/javascript" src="js/modernizr.js"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico">
-  <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
+  <%- include('partials/head') %>
 </head>
 <body>
-  <div class="w-section contact-overlay">
-    <div class="w-container"><a class="close-link" data-ix="close-contact-overlay" href="#">CLOSE&nbsp;✕</a>
-      <div class="form-wrapper">
-        <div class="contact-heading">Get in Touch</div>
-        <div class="small-divider"></div>
-        <div class="contact-text">Thank you for your interest! Please fill out the form below if you would like to work together.</div>
-        <div class="w-form">
-          <form data-name="Email Form" id="email-form" name="email-form">
-            <input class="w-input text-field" data-name="Name" id="name" maxlength="256" name="name" placeholder="Enter your name" type="text">
-            <input class="w-input text-field" data-name="Email" id="email" maxlength="256" name="email" placeholder="Enter your email address" required="required" type="email">
-            <textarea class="w-input text-field text-area" data-name="Project details" id="Project-details" maxlength="5000" name="Project-details" placeholder="What are your project details..."></textarea>
-            <input class="w-button submit-button" data-wait="Please wait..." type="submit" value="Send">
-          </form>
-          <div class="w-form-done success-message">
-            <p class="success-text">Thank you! Your submission has been received!</p>
-          </div>
-          <div class="w-form-fail">
-            <p>Oops! Something went wrong while submitting the form</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="w-section hero-section">
-    <div class="w-nav nav" data-animation="default" data-collapse="medium" data-contain="1" data-duration="400">
-      <div class="w-container">
-        <a class="w-nav-brand" href="index.html">
-          <div class="logo-text">TILE<strong data-new-link="true">DESIGN</strong>
-          </div>
-        </a>
-        <nav class="w-nav-menu w-preserve-3d nav-menu" role="navigation"><a class="w-nav-link nav-link" href="index.html">Home</a><a class="w-nav-link nav-link" href="about.html">About</a><a class="w-nav-link nav-link" href="portfolio.html">Portfolio</a><a class="w-nav-link nav-link" href="blog.html">Blog</a><a class="w-nav-link nav-link contact" data-ix="show-contact-overlay" href="#">Contact</a>
-        </nav>
-        <div class="w-nav-button menu-button">
-          <div class="w-icon-nav-menu"></div>
-        </div>
-      </div>
-    </div>
+  
+  <%- include('partials/contact_form') %>
+  <div class="w-section hero-section project-container">
+
+    <%- include('partials/nav_bar') %>
+    
     <div class="hero-overlay"></div>
     <h1></h1>
   </div>
@@ -109,22 +57,8 @@
       <div class="cta-heading">Lets Work Together</div><a class="w-button button" data-ix="show-contact-overlay" href="#">Contact Me</a>
     </div>
   </div>
-  <div class="w-section footer-section">
-    <div class="w-container">
-      <div class="w-row">
-        <div class="w-col w-col-3">
-          <a class="w-nav-brand logo-footer" href="index.html">
-            <div class="logo-text footer-logo">TILE<strong data-new-link="true">DESIGN</strong>
-            </div>
-          </a>
-        </div>
-        <div class="w-col w-col-9 w-clearfix footer-link-col"><a class="nav-link footer-link contact" data-ix="show-contact-overlay" href="#">Contact</a><a class="nav-link footer-link" href="blog.html">Blog</a><a class="nav-link footer-link" href="portfolio.html">Portfolio</a><a class="nav-link footer-link" href="about.html">About</a><a class="nav-link footer-link" href="index.html">Home</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script type="text/javascript" src="js/webflow.js"></script>
-  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+  <%- include('partials/footer') %>
+  
 </body>
 </html>

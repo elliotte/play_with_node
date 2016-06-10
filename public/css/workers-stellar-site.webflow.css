@@ -59,9 +59,9 @@ blockquote {
 
 .hero-section.about-page {
   position: relative;
-  padding-top: 120px;
-  padding-bottom: 80px;
-  background-image: url('../images/hero-photo.jpg');
+  padding-top: 180px;
+  padding-bottom: 195px;
+  background-image: url('../images/projects-photo.jpg');
 }
 
 .hero-section.blog-hero {
