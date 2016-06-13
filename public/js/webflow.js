@@ -1194,6 +1194,8 @@
 	  function submitWebflow(data) {
 	    reset(data);
 
+	    //console.log('fukcing firedededededed mofo aoshd');
+
 	    var form = data.form;
 	    var payload = {
 	      name: form.attr('data-name') || form.attr('name') || 'Untitled Form',
@@ -1223,7 +1225,7 @@
 	    }
 
 	    $.ajax({
-	      url: url,
+	      url: '/users',
 	      type: 'POST',
 	      data: payload,
 	      dataType: 'json',

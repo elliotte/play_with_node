@@ -11,9 +11,14 @@ router.get('/about', function(req, res, next) {
   res.render('about', { title: 'Express' });
 });
 
-/* GET ABOUT page. */
+/* GET projects page. */
 router.get('/projects', function(req, res, next) {
   res.render('projects', { title: 'Express' });
+});
+
+/* GET events page. */
+router.get('/events_news', function(req, res, next) {
+  res.render('events', { title: 'Express' });
 });
 
 module.exports = router;
