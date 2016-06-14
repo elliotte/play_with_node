@@ -13,7 +13,7 @@
     
     <div class="hero-overlay"></div>
     <%- include('partials/nav_bar') %>
-    <h1>Let's work together</h1>
+    <h1>What's on & updates</h1>
   
   </div>
 
@@ -25,12 +25,12 @@
             
             <a class="w-inline-block project-link blog-link" href="#" data-ix="blog-link">
               <div class="blog-image-wrapper">
-                <div class="blog-date"><%- (new Date()).toISOString().slice(0,10) %></div>
+                <div class="blog-date">Date: TBC</div>
                 <div class="blog-category">Fundraising</div>
-                <div class="blog-image blog-image-3"></div>
+                <div class="blog-image gala-ball"></div>
               </div>
-              <div class="blog-title">What event are you attending?</div>
-              <div class="blog-description">Learn the tips and tricks needed to be the best you can be.</div>
+              <div class="blog-title">Gala Ball Titanic Centre</div>
+              <div class="blog-description">To launch Friends of Sullivan & our new project join us in Belfast's Titanic centre.</div>
               <div>
                 <div class="blog-author">Written by</div>
                 <div class="blog-author">Jason Eves</div>
@@ -41,19 +41,34 @@
           <div class="w-dyn-item w-col w-col-4 blog-block">
             <a class="w-inline-block project-link blog-link" href="#" data-ix="blog-link">
               <div class="blog-image-wrapper">
-                <div class="blog-date"><%- (new Date()).toISOString().slice(0,10) %></div>
-                <div class="blog-category">News</div>
-                <div class="blog-image blog-image-1"></div>
+                <div class="blog-date">Date: TBC</div>
+                <div class="blog-category">Event</div>
+                <div class="blog-image ed-event"></div>
               </div>
-              <div class="blog-title">Latest news items</div>
-              <div class="blog-description">Learn what's going on in and around the school and stay up to date.</div>
+              <div class="blog-title">Edinburgh Ball</div>
+              <div class="blog-description">We are hosting an event for Sullivan friends to come together in Scotland.</div>
               <div>
                 <div class="blog-author">Written by</div>
                 <div class="blog-author">Harry O'Neill</div>
               </div>
             </a>
-
           </div>
+          <div class="w-dyn-item w-col w-col-4 blog-block">
+            <a class="w-inline-block project-link blog-link" href="#" data-ix="blog-link">
+              <div class="blog-image-wrapper">
+                <div class="blog-date">Date: TBC</div>
+                <div class="blog-category">Event</div>
+                <div class="blog-image lond-event"></div>
+              </div>
+              <div class="blog-title">London Ball</div>
+              <div class="blog-description">We are hosting an event for Sullivan friends to come together London City.</div>
+              <div>
+                <div class="blog-author">Written by</div>
+                <div class="blog-author">Harry O'Neill</div>
+              </div>
+            </a>
+          </div>
+
         </div>
         <!-- <div class="w-dyn-empty">
           <p>No items found.</p>
@@ -63,25 +78,9 @@
   </div>
   <div class="w-section cta-section">
     <div class="w-container">
-      <div class="cta-heading">Lets Work Together</div><a class="w-button button" data-ix="show-contact-overlay" href="#">Contact Me</a>
+      <div class="cta-heading">Be part of it</div><a class="w-button button" data-ix="show-contact-overlay" href="#">Join us</a>
     </div>
   </div>
-  <div class="w-section footer-section">
-    <div class="w-container">
-      <div class="w-row">
-        <div class="w-col w-col-3">
-          <a class="w-nav-brand logo-footer" href="index.html">
-            <div class="logo-text footer-logo">TILE<strong data-new-link="true">DESIGN</strong>
-            </div>
-          </a>
-        </div>
-        <div class="w-col w-col-9 w-clearfix footer-link-col"><a class="nav-link footer-link contact" data-ix="show-contact-overlay" href="#">Contact</a><a class="nav-link footer-link" href="blog.html">Blog</a><a class="nav-link footer-link" href="portfolio.html">Portfolio</a><a class="nav-link footer-link" href="about.html">About</a><a class="nav-link footer-link" href="index.html">Home</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script type="text/javascript" src="js/webflow.js"></script>
-  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  <%- include('partials/footer') %>
 </body>
 </html>

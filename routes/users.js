@@ -2,11 +2,12 @@ var express = require('express');
 var router = express.Router();
 
 var MongoClient = require('mongodb').MongoClient
-  , assert = require('assert');
+  // , assert = require('assert');
 
 // Connection URL
-var url = 'mongodb://master-user:1234monea1234@ds013574.mlab.com:13574/friends-of-sullivan';
+
 // Use connect method to connect to the Server
+var url = 'mongodb://master-user:1234monea1234@ds013574.mlab.com:13574/friends-of-sullivan';
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -16,11 +17,11 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next) {
   // var user = JSON.stringify(req.body)
   MongoClient.connect(url, function(err, db) {
-	    assert.equal(null, err);
-	    console.log("Motherfucker - connected correctly to server!");
+	    // assert.equal(null, err);
+	    // console.log("Motherfucker - connected correctly to server!");
 		
 		var user = req.body;
-	    console.log('Adding user: ' + JSON.stringify(user));
+	    // console.log('Adding user: ' + JSON.stringify(user));
 
 	    db.collection('users', function(err, collection) {
 	        collection.insert(user, {safe:true}, function(err, result) {

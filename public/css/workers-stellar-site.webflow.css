@@ -276,8 +276,8 @@ blockquote {
 }
 
 .social-block.pinterest {
-  background-color: #c92228;
-  background-image: url('../images/pinterest.svg');
+  background-color: #eee;
+  background-image: url('../images/linked-in-logo.png');
   background-size: 50px;
 }
 
@@ -287,13 +287,15 @@ blockquote {
 
 .social-block.dribbble {
   display: inline-block;
-  background-color: #e04c86;
-  background-image: url('../images/dribbble.svg');
-  background-size: 50px;
+  background-color: #00AB59;
+  background-image: url('../images/sully-logo.png');
+  background-size: 100px;
 }
 
+
 .social-block.dribbble:hover {
-  background-color: #c02c67;
+  background-color: #fff;
+  border: 1px solid #00AB59;
 }
 
 .footer-section {
@@ -547,6 +549,10 @@ blockquote {
   background-position: 50% 50%;
   background-size: cover;
 }
+.alternate-image.project-1 {
+  background-image: url('../images/sep-0.JPG');
+}
+
 
 .project-text {
   display: block;
@@ -584,6 +590,15 @@ blockquote {
 }
 .blog-image-4 {
   background-image: url('../images/blog-4.jpg');
+}
+.gala-ball {
+  background-image: url('../images/gala-ball.jpg');
+}
+.ed-event {
+  background-image: url('../images/ed-event.jpg');
+}
+.lond-event {
+  background-image: url('../images/lond-event.jpg');
 }
 
 
