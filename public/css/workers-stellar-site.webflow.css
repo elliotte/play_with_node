@@ -213,7 +213,7 @@ blockquote {
   background-image: url('../images/sep-6.jpg');
 }
 .tile-image.welcome {
-  background-image: url('../images/hallway.jpg');
+  background-image: url('../images/sep-7.jpg');
 }
 .tile-image.sully-street {
   background-image: url('../images/sep-5.jpg');
@@ -287,15 +287,15 @@ blockquote {
 
 .social-block.dribbble {
   display: inline-block;
-  background-color: #00AB59;
+  background-color: #fff;
   background-image: url('../images/sully-logo.png');
-  background-size: 100px;
+  background-size: 150px;
+  border: 1px solid #00AB59;
 }
 
 
 .social-block.dribbble:hover {
-  background-color: #fff;
-  border: 1px solid #00AB59;
+  border: 1px solid #333;
 }
 
 .footer-section {
