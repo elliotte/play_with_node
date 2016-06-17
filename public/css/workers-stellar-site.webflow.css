@@ -600,7 +600,9 @@ blockquote {
 .lond-event {
   background-image: url('../images/lond-event.jpg');
 }
-
+.sport-event {
+  background-image: url('../images/sports.jpg');
+}
 
 .blog-title {
   margin-bottom: 5px;
