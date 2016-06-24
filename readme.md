@@ -1,5 +1,7 @@
-# Clone repo > npm install 
-# Ensure you have mongo installed including bash CLI
+ ```bash
+Clone repo > npm install 
+Ensure you have mongo installed including bash CLI
+```
 
 ## Database interaction
 
@@ -14,3 +16,37 @@ mongo ds013574.mlab.com:13574/friends-of-sullivan -u <dbuser> -p <dbpassword>
  ```bash
 mongoexport -h ds013574.mlab.com:13574 -d friends-of-sullivan -c <collection> -u <user> -p <password> -o <output .csv file> --csv -f <comma-separated list of field names>
 ```
+
+ - Access to the DB can be done via a mLab user portal as well.
+
+ ```bash
+  link:  //mlab.com/home
+  user: "profitbees-dev"
+  account: "Profitbees" 
+  PW:  see FOS admin
+
+ ````
+
+ ## App Hosting
+
+  - Currently the website is hosted via Azure, through a Profitbees account subscription.
+
+ ```bash
+ link: https://portal.azure.com/
+ PW: see Profitbees or FOS admin
+ ```
+
+ ## Domain hosting
+
+   - The domain subscription is paid to 123-Reg.
+   - For details on login please see FOS admin.
+
+ ## DNS 
+
+  - DNS settings are setup within the advanced settings of the domain provider ( 123-Reg )
+  - Azure provides a static IPv4 address for A record setup, and can be accessed through the App hosting portal.
+  - CNAME for www is pointed toward the .azurewebsites.net address.
+
+  ## Technology stack
+
+   - NodeJS | Express | MongoDB | Azure
