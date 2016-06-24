@@ -462,6 +462,12 @@ blockquote {
   font-weight: 700;
 }
 
+.facebook-bar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #3b5998;
+}
+
 .button {
   padding: 15px 40px;
   background-color: #19975a;
@@ -469,6 +475,10 @@ blockquote {
   transition: background-color 400ms ease;
   font-size: 14px;
   text-transform: uppercase;
+}
+.button.fb {
+  background-color: white;
+  color: #3b5998;
 }
 
 .button:hover {
