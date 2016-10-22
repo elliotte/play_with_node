@@ -71,6 +71,13 @@ blockquote {
   background-image: url('../images/fund-bg.png');
 }
 
+.hero-section.donate-page {
+  position: relative;
+  padding-top: 180px;
+  padding-bottom: 195px;
+  background-image: url('../images/sep-5.jpg');
+}
+
 
 .hero-section.blog-hero {
   padding-top: 160px;

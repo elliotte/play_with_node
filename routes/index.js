@@ -25,6 +25,14 @@ router.get('/projects', function(req, res, next) {
   });
 });
 
+/* GET projects page. */
+router.get('/donate', function(req, res, next) {
+  res.render('donate', { 
+    title: 'Friends of Sullivan | Donations',
+    description: 'Donate securely using Paypal payments processing with any debit or credit card.', 
+  });
+});
+
 /* GET events page. */
 router.get('/events_news', function(req, res, next) {
   res.render('events', { 
