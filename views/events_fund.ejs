@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Thu Jun 09 2016 16:25:39 GMT+0000 (UTC) -->
+<html data-wf-site="57599863366474567c8797d7" data-wf-page="57599863366474567c8797e1">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <%- include('partials/contact_form') %>
+  
+  <div class="w-section hero-section fund-page">
+
+    <%- include('partials/nav_bar') %>
+    <h1>140th Anniversary Gala Ball</h1>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="w-section section">
+    <div class="w-container">
+      <div class="w-richtext">
+        <h2>[2016] Sullivan Upper School 140th Anniversary Ball</h2>
+        <br>
+        <p>Don’t miss what will be a spectacular evening of entertainment.</p>
+        <br>
+        <blockquote>
+        Sullivan Upper 140th Anniversary Ball
+        <br>
+        Titanic Belfast 
+        <br>
+        Saturday 4th February 2017
+        <br>
+        7.30pm for 8.00pm
+        <br><br>
+        Black Tie
+        <br>
+        £60 per person
+        </blockquote>
+        <figure data-rt-type="image" data-rt-align="floatright" data-rt-max-width="40" class="w-richtext-align-floatright" data-rt-max-height="941" style="max-width: 40%;">
+          <div id="flyer-view" data-href="//drive.google.com/file/d/0B-qzY6m4Xyo0VV9wRklHVDJ6U0RTc0ktQ0V0RzRrbnRzVFVn/view"><img src="images/flyer-thumbnail.png" alt="">
+          </div>
+        </figure>
+        <br>
+        <p>Next year the school will celebrate 140 continuous years providing education to the children of Holywood and the surrounding area. Join us to celebrate this milestone at our</p>
+        <p>All proceeds towards the ongoing school enhancement project helping to Sustain Sullivan’s Future for the next generation.</p>
+        
+        <p>In 1862, Robert Sullivan bequeathed a major legacy which led to the foundation of the Sullivan school in what is now the library building in Holywood High Street in 1877.</p>
+      </div>
+      <div class="alternate-image with-padding">
+           <iframe class="project-flyby" src="https://www.youtube.com/embed/7Yt18waOA-4" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <%- include('partials/footer') %>
+  
+  <script>
+
+      $('#flyer-view').on('click', function() {
+          var route = $(this).data('href')
+          window.open(route);
+          console.log(route)
+      });
+
+  </script>
+
+</body>
+  
+</html>
+

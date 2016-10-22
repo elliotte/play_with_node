@@ -33,4 +33,12 @@ router.get('/events_news', function(req, res, next) {
   });
 });
 
+/* GET events page. */
+router.get('/events_fundraising', function(req, res, next) {
+  res.render('events_fund', { 
+    title: 'Friends of Sullivan | Local Fundraising',
+    description: 'Next year the school will celebrate 140 continuous years providing education to the children of Holywood and the surrounding area.'
+  });
+});
+
 module.exports = router;

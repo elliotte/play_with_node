@@ -64,6 +64,14 @@ blockquote {
   background-image: url('../images/project-image-1.jpg');
 }
 
+.hero-section.fund-page {
+  position: relative;
+  padding-top: 180px;
+  padding-bottom: 195px;
+  background-image: url('../images/fund-bg.png');
+}
+
+
 .hero-section.blog-hero {
   padding-top: 160px;
   padding-bottom: 175px;
@@ -563,6 +571,14 @@ blockquote {
   background-image: url('../images/sep-1.JPG');
 }
 
+.project-flyby {
+  width: 100%;
+  height: 100%;  
+}
+
+.with-padding {
+  margin: 6em 0 3em 0;
+}
 
 .project-text {
   display: block;
