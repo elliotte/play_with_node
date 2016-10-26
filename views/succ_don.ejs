@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Thu Jun 09 2016 16:25:39 GMT+0000 (UTC) -->
+<html data-wf-site="57599863366474567c8797d7" data-wf-page="57599863366474567c8797e1">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <%- include('partials/contact_form') %>
+  
+  <div class="w-section hero-section gift-aid-page">
+
+    <%- include('partials/nav_bar') %>
+    <h1>Thank you for your donation</h1>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="w-section section">
+    <div class="w-container">
+      <div class="w-richtext">
+        <h2>[PLEASE] Declare your Gift Aid Donation</h2>
+        <br>
+        <p>I understand Sullivan Upper School, as the registered charity, will reclaim 25p of tax on every £1 that I give.</p>
+        <br>
+        <blockquote>
+            
+            <div class="w-container">
+                  <div class="form-wrapper">
+                    <div class="contact-heading" style="color:black;">Please declare your Donation as Gift Aid</div>
+                    <div class="small-divider"></div>
+                    <div class="contact-text">Thank you for your interest! Please fill out the form below and we will send you more information.</div>
+                    <div class="w-form">
+                      <form data-name="" id="gift-aid-form" name="gift-aid-declaration">
+                        <input class="w-input text-field gift" data-name="Name" id="name" maxlength="256" name="name" placeholder="Enter your name" type="text">
+                        <input class="w-input text-field gift" data-name="Email" id="email" maxlength="256" name="email" placeholder="Your email address" required="required" type="email">
+                        <input class="w-input text-field gift" data-name="Amount" id="amount" maxlength="256" name="amount" placeholder="Amount you donated" type="text">
+                        <input class="w-input text-field gift" data-name="declaration" id="Declaration" maxlength="256" name="declaration" value="I declare that I wish Sullivan Upper School to treat all donations as Gift Aid donations" type="text" style="display:none;">
+                        <input class="w-button submit-button" data-wait="Please wait..." type="submit" value="Declare Gift Aid">
+                      </form>
+                      <div class="w-form-done success-message">
+                        <p class="success-text">Thank you! Your submission has been received and we will send you more information shortly.</p>
+                      </div>
+                      <div class="w-form-fail">
+                        <p>Oops! Something went wrong while submitting the form</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </blockquote>
+        <figure data-rt-type="image" data-rt-align="floatright" data-rt-max-width="40" class="w-richtext-align-floatright" data-rt-max-height="941" style="max-width: 40%;">
+          <a href="//drive.google.com/file/d/0B-qzY6m4Xyo0Yk45OVEyNjlLeDg/view" target="_blank">Or Download pledge form</a>
+          </div>
+        </figure>
+        <br>
+        <p>I declare that I wish Sullivan Upper School to treat all donations that I make from the date of this declaration and all donations made to the school in the four years prior to the date of this declaration until I notify you otherwise, as Gift Aid donations.</p>
+        <p>I confirm I have paid or will pay an amount of UK Income Tax and/or UK Capital Gains Tax for each tax year (6 April to 5 April) that is at least equal to the amount of tax that all the charities or Community Amateur Sports Clubs (CASCs) that I donate to will reclaim on my gifts for that tax year.</p>
+        <p style="font-size:90%;">If you pay Income Tax at the higher or additional rate and want to receive the additional tax relief due to you, you must include all your Gift Aid donations on your Self-Assessment tax return or ask HM Revenue and Customs to adjust your tax code.</p>
+      </div>
+    </div>
+  </div>
+
+  <%- include('partials/footer') %>
+  
+</body>
+  
+</html>
+

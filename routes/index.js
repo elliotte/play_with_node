@@ -49,4 +49,12 @@ router.get('/events_fundraising', function(req, res, next) {
   });
 });
 
+/* GET events page. */
+router.get('/successful_donation', function(req, res, next) {
+  res.render('succ_don', { 
+    title: 'Friends of Sullivan',
+    description: 'Thank you.'
+  });
+});
+
 module.exports = router;

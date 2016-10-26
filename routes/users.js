@@ -18,7 +18,7 @@ router.post('/', function(req, res, next) {
   // var user = JSON.stringify(req.body)
   MongoClient.connect(url, function(err, db) {
 	    // assert.equal(null, err);
-	    // console.log("Motherfucker - connected correctly to server!");
+	    //console.log("Motherfucker - connected correctly to server!");
 		
 		var user = req.body;
 	    // console.log('Adding user: ' + JSON.stringify(user));
@@ -40,3 +40,5 @@ router.post('/', function(req, res, next) {
 });
 
 module.exports = router;
+
+

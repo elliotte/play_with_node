@@ -71,6 +71,13 @@ blockquote {
   background-image: url('../images/fund-bg.png');
 }
 
+.hero-section.gift-aid-page {
+  position: relative;
+  padding-top: 180px;
+  padding-bottom: 195px;
+  background-image: url('../images/war-pro-1.jpg');
+}
+
 .hero-section.donate-page {
   position: relative;
   padding-top: 180px;
@@ -375,6 +382,11 @@ blockquote {
 .text-field:focus {
   border-color: hsla(0, 0%, 100%, .3);
   color: #fff;
+}
+
+.text-field.gift:focus {
+  border-color: hsla(0, 0%, 100%, .3);
+  color: #295303;
 }
 
 .text-field.text-area {
