@@ -16,7 +16,7 @@ mongo ds013574.mlab.com:13574/friends-of-sullivan -u <dbuser> -p <dbpassword>
  - Export data to CSV, with output into app route directory
  
  ```bash
-mongoexport -h ds013574.mlab.com:13574 -d friends-of-sullivan -c <collection> -u <user> -p <password> -o <output .csv file> --csv -f <comma-separated list of field names>
+mongoexport -h ds013574.mlab.com:13574 -d friends-of-sullivan -c users -u master-user -p xxx -o users.csv --csv -f name,fields[Name],fields[Email]
 ```
 
  - Access to the DB can be done via a mLab user portal as well.
